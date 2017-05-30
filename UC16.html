@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <title>HolidAPI</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,34 +9,493 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="uc16.js"></script>
-  </head>
-  <body>
+</head>
+
+<body>
     <div class="container">
-      <h2>HolidAPI</h2>
-      <br>
-      <p>Find out if theres a holdiay this month... or in this COUNTRY!!! HOO HO HO HA!</p>
-      <div>
-        <div id="zipbox" class="control-group">
-          <label for="country">Input Country</label>
-          <input type="text" name="country" id="country" placeholder="EX: US" />
-          <br>
-          <label for="year">Input Year</label>
-          <input type="text" name="year" id="year" placeholder="EX: 2016" />
-          <br>
-          <label for="month">Input Month</label>
-          <input type="text" name="month" id="month" placeholder="EX: 03" />
-          <br>
+        <h2>HolidAPI</h2>
+        <br>
+        <p>Find out if theres a holdiay this month... or in this COUNTRY!!! HOO HO HO HA!</p>
+        <div>
+            <div id="zipbox" class="control-group">
+                <div>
+                    <label for="country">Please Select your country from below:</label>
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Afghanistan
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Albania
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Algeria
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Andorra
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Angola
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Antigua and Barbuda
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Argentina
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Armenia
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Aruba
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Australia
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Austria
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Azerbaijan
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Top of Page
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Bahamas, The
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Bahrain
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Bangladesh
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Barbados
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Belarus
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Belgium
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Belize
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Benin
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Bhutan
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Bolivia
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Bosnia and Herzegovina
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Botswana
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Brazil
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Brunei
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Bulgaria
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Burkina Faso
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Burma
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Burundi
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Top of Page
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Cambodia
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Cameroon
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Canada
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Cabo Verde
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Central African Republic
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Chad
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Chile
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">China
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Colombia
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Comoros
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Congo, Democratic Republic of the
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Congo, Republic of the
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Costa Rica
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Cote d'Ivoire
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Croatia
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Cuba
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Curacao
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Cyprus
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Czechia
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Top of Page
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Denmark
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Djibouti
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Dominica
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Dominican Republic
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Top of Page
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">East Timor (see Timor-Leste)
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Ecuador
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Egypt
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">El Salvador
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Equatorial Guinea
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Eritrea
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Estonia
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Ethiopia
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Top of Page
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Fiji
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Finland
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">France
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Top of Page
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Gabon
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Gambia, The
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Georgia
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Germany
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Ghana
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Greece
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Grenada
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Guatemala
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Guinea
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Guinea-Bissau
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Guyana
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Top of Page
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Haiti
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Holy See
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Honduras
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Hong Kong
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Hungary
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Top of Page
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Iceland
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">India
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Indonesia
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Iran
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Iraq
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Ireland
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Israel
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Italy
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Top of Page
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Jamaica
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Japan
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Jordan
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Top of Page
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Kazakhstan
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Kenya
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Kiribati
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Korea, North
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Korea, South
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Kosovo
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Kuwait
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Kyrgyzstan
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Top of Page
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Laos
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Latvia
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Lebanon
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Lesotho
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Liberia
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Libya
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Liechtenstein
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Lithuania
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Luxembourg
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Top of Page
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Macau
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Macedonia
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Madagascar
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Malawi
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Malaysia
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Maldives
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Mali
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Malta
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Marshall Islands
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Mauritania
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Mauritius
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Mexico
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Micronesia
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Moldova
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Monaco
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Mongolia
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Montenegro
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Morocco
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Mozambique
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Top of Page
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Namibia
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Nauru
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Nepal
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Netherlands
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">New Zealand
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Nicaragua
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Niger
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Nigeria
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">North Korea
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Norway
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Top of Page
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Oman
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Top of Page
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Pakistan
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Palau
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Palestinian Territories
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Panama
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Papua New Guinea
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Paraguay
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Peru
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Philippines
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Poland
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Portugal
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Top of Page
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Qatar
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Top of Page
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Romania
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Russia
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Rwanda
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Top of Page
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Saint Kitts and Nevis
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Saint Lucia
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Saint Vincent and the Grenadines
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Samoa
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">San Marino
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Sao Tome and Principe
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Saudi Arabia
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Senegal
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Serbia
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Seychelles
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Sierra Leone
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Singapore
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Sint Maarten
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Slovakia
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Slovenia
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Solomon Islands
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Somalia
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">South Africa
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">South Korea
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">South Sudan
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Spain
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Sri Lanka
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Sudan
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Suriname
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Swaziland
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Sweden
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Switzerland
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Syria
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Top of Page
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Taiwan
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Tajikistan
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Tanzania
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Thailand
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Timor-Leste
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Togo
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Tonga
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Trinidad and Tobago
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Tunisia
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Turkey
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Turkmenistan
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Tuvalu
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Top of Page
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Uganda
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Ukraine
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">United Arab Emirates
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">United Kingdom
+                    <br>
+                    <input class="btn btn-primary active" type="radio" name="country" value="us" id="country">United States
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Uruguay
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Uzbekistan
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Top of Page
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Vanuatu
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Venezuela
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Vietnam
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Top of Page
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Yemen
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Top of Page
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Zambia
+                    <br>
+                    <input class="btn btn-primary disabled" type="radio" name="country" value="">Zimbabwe
+                    <br>
+                <div>
+                    <br>
+                    <label for="year">Input Year</label>
+                    <input type="text" name="year" id="year" placeholder="EX: 2016" />
+                    <br>
+                    <label for="month">Input Month</label>
+                    <input type="text" name="month" id="month" placeholder="EX: 03" />
+                    <br> </div>
+            </div>
+            <p>Currently only supports the US</p>
+            <br>
+            <div>
+                <button class="btn btn-success btn-large" onclick="getResponse('country', 'year', 'month')">Find Holidays</button>
+            </div>
+            <br>
+            <div>
+                <div id="selectedHolidays" class=""></div>
+            </div>
         </div>
-      </div>
-      <p>Currently only supports the US</p>
-      <br>
-      <div>
-        <button class="btn btn-success btn-large" onclick="getResponse('country', 'year', 'month')">Find Holidays</button>
-      </div>
-      <br>
-      <div>
-        <div id="selectedHolidays" class=""></div>
-      </div>
-    </div>
-  </body>
+</body>
+
 </html>
