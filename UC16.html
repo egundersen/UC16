@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Zip Code Finder</title>
+    <title>HolidAPI</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -11,22 +11,30 @@
   </head>
   <body>
     <div class="container">
-      <h2>Zip Code Finder</h2>
-      <br/>
-      <p>Try entering a zip code like <b>90210</b> Beverly Hills, CA!</p>
+      <h2>HolidAPI</h2>
+      <br>
+      <p>Find out if theres a holdiay this month... or in this COUNTRY!!! HOO HO HO HA!</p>
       <div>
         <div id="zipbox" class="control-group">
-          <label for="zip">Zip</label>
-          <input type="text" name="zip" id="zip" placeholder="Type your ZIP code" />
+          <label for="country">Input Country</label>
+          <input type="text" name="country" id="country" placeholder="EX: US" />
+          <br>
+          <label for="year">Input Year</label>
+          <input type="text" name="year" id="year" placeholder="EX: 2016" />
+          <br>
+          <label for="month">Input Month</label>
+          <input type="text" name="month" id="month" placeholder="EX: 03" />
+          <br>
         </div>
       </div>
-      <br />
+      <p>Currently only supports the US</p>
+      <br>
       <div>
-        <button class='btn btn-success btn-large' onclick="findZip('zip')">Find Zip Code</button>
+        <button class="btn btn-success btn-large" onclick="getResponse('country', 'year', 'month')">Find Holidays</button>
       </div>
-      <br />
+      <br>
       <div>
-        <div id="place" class=""></div>
+        <div id="selectedHolidays" class=""></div>
       </div>
     </div>
   </body>
